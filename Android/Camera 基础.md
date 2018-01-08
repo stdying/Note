@@ -10,7 +10,7 @@ width一般大于height，默认摄像头是横向，预览时需要设置camera
 
 Android6.0的源代码中，预览的大小和PictureSize有关，先看看系统如何设置Picture Size
 
-#### PictureSize
+#### PictureSize设置
 [代码位置](https://github.com/stdying/android-6.0.1_r1/blob/master/packages/apps/Camera/src/com/android/camera/CameraSettings.java)
 
 ```java
