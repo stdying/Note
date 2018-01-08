@@ -51,6 +51,6 @@
 
 连接标识字段一个字节
 
-0000111
+00001110
 
 ![配置](../img/mqtt/mqtt_connect_flag.png)
