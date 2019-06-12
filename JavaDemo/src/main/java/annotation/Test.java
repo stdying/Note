@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 @MyAnnotation.MyClassAndMethodAnnotation(classType = MyAnnotation.MyClassAndMethodAnnotation.EnumType.util)
 public class Test {
 
-    @MyAnnotation.MyFieldAnnotation(desc = "The Class Field", uri = "est#id")
+    @MyAnnotation.MyFieldAnnotation(desc = "The Class Field", uri = "test#id")
     private String id;
 
     @MyAnnotation.MyConstructionAnnotion(desc = "The Class Constructor", uri = "test#constructor")
@@ -50,6 +50,13 @@ public class Test {
         MyAnnotation.MyFieldAnnotation myFieldAnnotation =
                 field.getAnnotation(MyAnnotation.MyFieldAnnotation.class);
         System.out.println(myFieldAnnotation.desc()+" + "+myFieldAnnotation.uri());
+
+
+        MyAnnotation.MyClassAndMethodAnnotation myClassAndMethodAnnotation =
+                clazz.getAnnotation(MyAnnotation.MyClassAndMethodAnnotation.class);
+        System.out.println(myClassAndMethodAnnotation.classType()+" + "+
+                myClassAndMethodAnnotation.color()+" + "+
+                myClassAndMethodAnnotation.arr().toString());
 
     }
 
